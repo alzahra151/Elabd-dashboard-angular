@@ -1,0 +1,151 @@
+<div id='gfg'>
+	<tabset >
+		<tab heading="Add One Product" customClass="tabs ">
+      <div class="container addProd pt-4">
+        <form>
+         
+          <div class="row mb-4">
+            <div class="col-md-6 ">
+              <div class="form-group">
+                <!-- <label for="first">English Name</label> -->
+                <input type="text" class="form-control" placeholder="Enter Product Title In English" id="first">
+              </div>
+            </div>
+            <!--  col-md-6   -->
+      
+            <div class="col-md-6 ">
+              <div class="form-group">
+                <!-- <label for="last">Arabic Name</label> -->
+                <input type="text" class="form-control" placeholder="Enter Product Title In Arabic" id="last">
+              </div>
+            </div>
+            <!--  col-md-6   -->
+          </div>
+      
+      
+          <div class="row mb-4">
+            <div class="col-md-6 ">
+              <div class="form-group">
+                <!-- <label for="company">Price</label> -->
+                <input type="number" class="form-control" placeholder="Enter Product Price" id="company">
+              </div>
+      
+      
+            </div>
+            <!--  col-md-6   -->
+      
+            <div class="col-md-6">
+      
+              <div class="form-group">
+                <!-- <label for="phone">Amount</label> -->
+                <input type="number" class="form-control" id="phone" placeholder="Enter Product Quentity">
+              </div>
+            </div>
+            <!--  col-md-6   -->
+          </div>
+          <!--  row   -->
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <div class="form-group">
+                <!-- <label for="company">Arabic Category</label> -->
+                <select class="form-select" aria-label="Default select example">
+                  <option selected disabled>Select Category In English</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+      
+      
+            </div>
+            <!--  col-md-6   -->
+      
+            <div class="col-md-6">
+      
+              <div class="form-group">
+                <!-- <label for="phone">English Category</label> -->
+                <select class="form-select" aria-label="Default select example">
+                  <option selected disabled>Select Category In Arabic</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <!--  col-md-6   -->
+          </div>
+      
+          <div class="row mb-4">
+            <div class="col-md-6">
+      
+              <div class="form-group">
+                <!-- <label for="email">Quentity</label> -->
+                <textarea class="form-control " id="textAreaExample2"  placeholder="Enter Product Description In English"></textarea>
+              </div>
+            </div>
+            <div class="col-md-6">
+      
+              <div class="form-group">
+                <!-- <label for="email">Quentity</label> -->
+                <textarea class="form-control " id="textAreaExample2"  placeholder="Enter Product Description In Arabic"></textarea>
+              </div>
+            </div>
+         
+          </div>
+          <div class="row mb-4">
+            
+            <div class="col-md-6">
+      
+              <div class="form-group">
+                <!-- <label for="email">picture</label> -->
+                <div class="input-group mb-3">
+                  <input type="file" class="form-control" id="inputGroupFile02" accept="image/*">
+                 
+                </div>
+                  <!-- <input type="file" name="myImage" accept="image/*" /> -->
+                
+              </div>
+            </div>
+         
+          </div>
+          <!--  row   -->
+      
+      
+          <!-- <label for="contact-preference">When is the best time of day to reach you?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="contact-preference" id="contact-preference" value="am" checked>Morning
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="contact-preference" id="contact-preference" value="pm" checked>Evening
+            </label>
+          </div> -->
+      
+          <!-- <label for="newsletter">Would you like to recieve our email newsletter?</label>
+          <div class="checkbox">
+      
+            <label>
+              <input type="checkbox" value="Sure!" id="newsletter"> Sure!
+            </label>
+          </div> -->
+      
+          <div class="d-flex align-items-end justify-content-end">
+            <button type="submit" class="btn  addprodbtn m-3 btn-lg">Add Product</button>
+          </div>
+          
+        </form>
+      </div>
+		</tab>
+		<tab heading="Add Products Exell">
+		 <div class="col m-auto p-5 exellFile mb-5">
+      <form [formGroup]="exellFileForm">
+        <label for="formFile">choose your exell file</label>
+        <input class="form-control w-25" type="file" id="formFile" formControlName="ExcelDataInput" accept=".xlsx" (change)="readExcel($event)">
+      </form>
+      </div>
+		</tab>
+		
+	</tabset>
+</div>

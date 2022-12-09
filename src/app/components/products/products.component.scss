@@ -1,0 +1,99 @@
+.table-color{
+    background-color: white;
+    
+}
+.img{
+    width: 80px;
+    height:80px
+}
+.productsTable{
+    background-color: white;
+}
+.exellFile{
+    background-color: white;
+}
+:host {
+    ::ng-deep {
+      tabset {
+        a {
+            color: #000000 !important;
+        .nav-link {
+            background: #ffffff;
+          
+            border: 1px solid #dde6fb;
+            border-radius: 4px;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            color: #000000 !important;
+        }
+            &.active {
+                color:#F6B0AB !important;
+                
+            
+          }
+        }
+      }
+    }
+  }
+
+  
+
+
+
+@media (min-width: 1200px) {
+    .tablText {
+      font-size: 18px;
+    }
+  }
+  @media (max-width: 1199.98px) {
+    .tablText {
+      font-size: 15px;
+    }
+  }
+
+
+  @media (max-width: 370px) {
+    .tablText {
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: 270px) {
+    .tablText {
+      font-size: 11px;
+    }
+  }
+
+#cardtetx
+{
+  font-size: 14px;
+}
+#imgtetx{
+  font-size: 12px;
+  font-weight: bold;
+
+}
+  .shadow{
+    box-shadow:10px 10px 10px 10px #757474;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 10px;
+    background-color: #fff;
+    min-height: 400px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+  box-shadow:3px 3px 3px 3px #ddd;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 10px;
+}
+
+.body{
+    background-color: rgb(238, 238, 238);
+}

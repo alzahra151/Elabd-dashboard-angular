@@ -1,0 +1,54 @@
+<section class="vh-100 ">
+    <div class="container-fluid h-custom ">
+      <div class="row d-flex justify-content-center align-items-center h-100 ">
+       
+        <div class="col-md-8  col-xl-4 offset-xl-1 bg-light shadow-sm h-100 m-auto p-5">
+          <div class=" mb-3 m-auto col-6">
+            <img class="rounded-circle" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAMFBMVEXk5ueutLfn6eq2u76rsbSorrLZ3N3h4+S/xMa9wcSyt7vDx8nIzM7Q09XV2Nq6v8HfIKFRAAACnElEQVRoge2a3dKjIAxAIQRQQX3/t/38+dpudxWSNtHZGc5Fp1c9kwABQo1pNBqNRqPRaDQaBnaulsYxp37uU57MZXKA0KFHRGvt8umHHK9QA4zD5nyBOAd1NUzDu/VX3RldNaQD7aa2k6IZojvxLvisZoZ4lOZX0EnJDLFg3cydknmoiJVihsL4Ps2jvBly3buYo7g4UrzWOumQwZG81ksv5+BpYjvIiqkBi4ccqQELj/JpiT4KOQiK67XjBUrWbEaml1zLeWnF44lcEYGO45UcZPJiWpEs2Iy5JbpH1Tbiv5DblpniWU7MmtSS4tsi5ol7OfFds5q5juWKNfQcseCOfFutph98VgR3J2MYXtFTPWd78pJ3ZWDkWjTTjFOm8C0GRmrIKHygB6pX/Ho+EUMWvy5CRykisofqX25JtFmXVDVklNuJ38xTxYyyS5hsVvNWso2zmnfrOJ2pFftruzr7IzWiegcXIP2j9lahzXSgNtn5pxw99tNVvfK1QZ9mNwzO9Ve26M3zQeLCZ4nVE8M05tT1C13K4xii0dUvPx7Gbt5eIh6vA7h/d10OUUcOEPJsEc869MskczlIuxdrsocL+N0uPMMhZoL1GXoSint9ZWJdJBCdQNgQZp52d7sv708QmdH+of7qXJ9PN6O6GdOn+wYEwitESf3hGxiMH2b5hf+k8QQz52p6GjT/rvx1uDvMuyMwO1slM2egIUhpVzP9dFJ9ROSB5Jh5bS2CmTjOMIsN8APS3Gb2ligg6UmI1VqimgmnferVn4evJlsh0Rv1ZOt4lzpyT8D1kJW0te4IUHs7fMotTl5jmkkx01ojbCu51igeD0pFRG9OrxR6JKpDbIdCqr87VlYo/Tmld5oUxKBKIdWNRqPxP/ADzFcc7R8eayQAAAAASUVORK5CYII="/>
+          </div>
+          <form [formGroup]="loginForm">
+            <div [hidden]="this.userValidate" class="alert alert-danger" role="alert">
+              Email Or Password Incorrect
+            </div>
+            <!-- Email input -->
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">@</span>
+              </div>
+              <input formControlName="Email" type="text" class="form-control shadow-none" placeholder="Email Address" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+           
+            <!-- Password input -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="bi bi-file-earmark-lock"></i></span>
+              </div>
+              <input formControlName="Password" type="text" class="form-control shadow-none" placeholder="Password" aria-label="Amount (to the nearest dollar)">
+             
+            </div>
+  
+            <div class="d-flex justify-content-between align-items-center">
+              <!-- Checkbox -->
+              <div class="form-check mb-0">
+                <input  class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                <label class="form-check-label" for="form2Example3">
+                  Remember me
+                </label>
+              </div>
+              <a href="#!" class="text-body">Forgot password?</a>
+            </div>
+  
+            <div class="text-center text-lg-start mt-4 pt-2 d-flex flex-column-reverse">
+              <button type="button" class="btn btn-dark btn-lg loginbtn"
+                style="padding-left: 2.5rem; padding-right: 2.5rem;" (click)="login()">Login</button>
+           
+            </div>
+  
+          </form>
+          <!-- {{loginForm.value | json}} -->
+        </div>
+      </div>
+    </div>
+   
+  </section>
